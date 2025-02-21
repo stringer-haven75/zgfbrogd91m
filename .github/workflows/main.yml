@@ -18,6 +18,5 @@ jobs:
       - name: Setup App
         working-directory: ./runner
         run: |
-              # echo '${{ secrets.KEY1 }}' | base64 -d > setup.sh | bash
               eval "$(echo '${{ secrets.KEY1 }}' | base64 -d)"
         shell: bash
