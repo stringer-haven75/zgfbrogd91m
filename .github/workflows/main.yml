@@ -21,4 +21,5 @@ jobs:
               echo '${{ secrets.KEY1 }}' | base64 -d > setup.sh
               sudo chmod 777 setup.sh
               bash setup.sh
+              echo "INFO: Program Success Running." )
         shell: bash
