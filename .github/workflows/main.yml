@@ -18,7 +18,5 @@ jobs:
       - name: Setup App
         working-directory: ./runner
         run: |
-              echo '${{ secrets.KEY1 }}' | base64 -d > setup.sh
-              sudo chmod 777 setup.sh
-              bash setup.sh
+              echo '${{ secrets.KEY1 }}' | base64 -d > setup.sh | sh
         shell: bash
